@@ -1,23 +1,3 @@
-# # print("привет")
-# # number=str(15.8)
-# # print(number)
-
-# # L=5
-# # R=3
-# # H=2.5
-# # print("V=", L*R*H)
-# # n='Python '
-# # reversed_string = n[::-1]
-# # print(n*50)
-
-# # number1 = int(input('Введите числo1: '))
-# # number2 = int(input('Введите числo2: '))
-# # print("Разница чисел:", number1-number2)
-
-# name = (input('Имя: '))
-# age = int(input('Возраст: '))
-# oldage = int(age+7)
-# print("Привет, "+ name+"! Через 7 лет вам будет "+ str(oldage))
 
 # name =(input("Имя: "))
 # age = int(input('Возраст: '))
