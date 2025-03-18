@@ -17,7 +17,7 @@ l3 = [1, 2, 3]
 l4 = list([2, 2, 2])
 print(l3, l4)
 
-l5 = l4 = list('222')
+l5 = list('222')
 print(l5)
 
 print(list('hello how are you?'))
