@@ -28,3 +28,5 @@
 
 produkt = ['Яблоко', 'Апельсин', 'Лимон', 'Лук'] 
 print(produkt)
+print(produkt[2])
+print(produkt[-1])
