@@ -48,7 +48,7 @@
 #     print(f"Вычитание чисел: {number1 - number2}")
 # if operation == '*':
 #     print(f"Произведение чисел: {number1 * number2}")
-# if operation == '/':
+# if operation == '/' and number2 > 0:
 #     print(f"Деление чисел: {number1 / number2}")
 # elif number2 == 0:
 #     print("Ошибка: деление на ноль!")
