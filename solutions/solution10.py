@@ -6,6 +6,8 @@
 #     print("Число делится на 2")
 #     if number % 3 == 0:
 #         print("Число делится на 3")
+# elif number % 3 == 0:
+#         print("Число делится на 3")
 # else:
 #     print("Число не делится ни на 2, ни на 3")
 
@@ -48,10 +50,11 @@
 #     print(f"Вычитание чисел: {number1 - number2}")
 # if operation == '*':
 #     print(f"Произведение чисел: {number1 * number2}")
-# if operation == '/' and number2 > 0:
-#     print(f"Деление чисел: {number1 / number2}")
-# elif number2 == 0:
-#     print("Ошибка: деление на ноль!")
+# if operation == '/':
+#     if number2 == 0:
+#         print("Ошибка: деление на ноль!")
+#     else:
+#         print(f"Деление чисел: {number1 / number2}")
 
 # 3. Проверка числа на чётность и делимость на 3
 # """
@@ -68,10 +71,17 @@
 # """
 #РЕШЕНИЕ3!!!
 # number = int(input("Введите число: "))
-# if (number%2 == 0 and number%3 == 0):
-#     print('"Чётное и кратно трём"')
+
+# if (number%2 == 0):
+#     if number%3 == 0:
+#         print('"Чётное и кратно трём"')
+#     else:
+#         print('"Чётное, но не кратно трём"')
 # else:
-#     print('"Нечётное и не кратно трём"')
+#     if number%3 == 0:
+#         print('"Нечётное и кратно трём"')
+#     else:
+#         print('"Нечётное и не кратно трём"')
 
 # 4. Проверка года на високосность
 # """
@@ -104,12 +114,12 @@
 #     Треугольник существует, если сумма двух сторон больше третьей.
 # """
 #РЕШЕНИЕ5
-# length1 = int(input("Введите длину 1 стороны треугольника: "))
-# length2 = int(input("Введите длину 2 стороны треугольника: "))
-# length3 = int(input("Введите длину 3 стороны треугольника: "))
+length1 = int(input("Введите длину 1 стороны треугольника: "))
+length2 = int(input("Введите длину 2 стороны треугольника: "))
+length3 = int(input("Введите длину 3 стороны треугольника: "))
 
-# # if ((length1+length2 > length3) or (length3+length2 > length1) or (length1+3 > length2)):
+if ((length1+length2 > length3) and (length3+length2 > length1) and (length1+length3 > length2)):
 # if ((length1+length2) > length3):
-#     print("Треуголник существует")
-# else:
-#     print("Треуголник не существует")
+    print("Треуголник существует")
+else:
+    print("Треуголник не существует")
