@@ -111,8 +111,32 @@
 # i-я ступенька состоит из чисел от 1 до i без пробелов.
 
 n = int(input())
-n<=9
-for i in range(1, n+1):
-    for x in range(1, i+1):
-        print(x)
-    print(i)
+# # n<=9
+# # for i in range(1, n+1):
+# #     for x in range(1, i+1):
+# #         print(x)
+# #     print(i)
+
+# var 0
+# for i in range(1, n + 1):
+#     print(list(range(1, i + 1)))
+
+# var 1
+# for i in range(1, n + 1):
+#     s = ""
+#     for j in range(1, i + 1):
+#         s += str(j) + " "
+
+#     print(s)
+
+# var 2
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+
+# print("Hello ", end="")
+# print("Denis") # end = "\n"
+
+
+# ДЗ ознакомиться с "pep 8" на русском
