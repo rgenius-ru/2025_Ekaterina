@@ -44,3 +44,16 @@
 
 # print(f'Общая зарплата: {sum_salary}')
 # print('Конец цикла')
+
+# Вариант с тем же результатом что и в предыдущем без continue
+salary = [100, 200, 300, -400, 500]
+
+sum_salary = 0
+for s in salary:
+    if s < 0:
+        print("Зарплата не может быть отрицательной")
+    else:
+        sum_salary += s
+
+print(f'Общая зарплата: {sum_salary}')
+print('Конец цикла')
