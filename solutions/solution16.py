@@ -41,34 +41,24 @@
 # print(f"Сумма четных: {sum_salary}")
 
 # 3. Пропуск ошибок НЕ СМОГЛА посчитать слово ошибка
-# list = [10, 12, "ошибка", 20, "ошибка", 30, -1, 40]
+# checklist = [10, 12, "ошибка", 20, "ошибка", 30, -1, 40]
 # sum_list = 0
-# sum_2 = 0
-# for i in list:
-#     if i == "ошибка":
-#         # sum_2 += i
-#         # a = len('ошибка')
+# count_errors = 0
+# for element in checklist:
+#     if element == "ошибка":
+#         count_errors += 1
 #         continue
-#     # print(f"Пропущено {a} ошибки")
-#     sum_list += i
+#     sum_list += element
 # print(f"Общая сумма: {sum_list}")
-
-# list = [10, 12, "ошибка", 20, "ошибка", 30, -1, 40]
-# sum_2 = 0
-# for i in list:
-#     if i == input("ошибка"):
-#         continue
-#     sum_2 += i
-#         # continue
-# print(f"пропущено: {sum_2} ошибки")
+# print(f"Пропущено {count_errors} ошибки")
 
 # 4. Поиск в матрице
-# flag = False  НЕ РАЗОБРАЛАСЬ            
-# matrix = [
-#     [10, 20, 30],
-#     [45, 55, 65],
-#     [70, 80, 90]
-# ]
+flag = False  #НЕ РАЗОБРАЛАСЬ            
+matrix = [
+    [10, 20, 30],
+    [45, 55, 65],
+    [70, 80, 90]
+]
 # for i in matrix[0]:
 #     if i >= 50:
 #         print(f"Первое число больше 50: {i}")
@@ -81,3 +71,14 @@
 #             if i >= 50:
 #                 print(f"Первое число больше 50: {i}")
 #                 break
+# print(matrix[1:][0])
+# is_need_stop = False
+# for row in matrix:
+#     if is_need_stop == True:
+#         break
+#     for number in row:
+#         if number >= 50:
+#             is_need_stop = True
+#             print(f"Первое число больше 50: {number}")
+#             break
+        
